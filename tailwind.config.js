@@ -10,6 +10,17 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: '#6955EA',
+        secondary: '#E2E6FF',
+        tertiary: '#D6DCFF',
+        darker: '#352D66',
+        button: '#5B48D0',
+        backgroundDiv: '#AEA2FF',
+        lighterBackgroundDiv: '#F5F3FE',
+        icon: '#A698FF',
+      },
+      fontFamily: {
+        sans: ['Manrope', 'sans-serif'], // Manrope as the default sans-serif font
       },
     },
   },
