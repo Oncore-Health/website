@@ -18,6 +18,8 @@ module.exports = {
         backgroundDiv: '#AEA2FF',
         lighterBackgroundDiv: '#F5F3FE',
         icon: '#A698FF',
+        footer: '#F7F8FD',
+        usecasesBackground: '#F4F1FF'
       },
       fontFamily: {
         sans: ['Manrope', 'sans-serif'], // Manrope as the default sans-serif font
