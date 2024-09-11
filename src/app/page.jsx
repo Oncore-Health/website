@@ -11,7 +11,7 @@ export default function Home() {
         {/* Hero Section */}
         <section id="hero" className="flex flex-col items-center text-center p-8 md:flex-row md:justify-between md:items-center px-16 bg-gradient-to-b from-white to-gradientEnd">
           <div className="md:w-1/2 text-left">
-            <h1 className="text-4xl font-[1000] text-gray-900 mb-4 leading-tight">
+            <h1 className="text-4xl font-[1000] text-gray-900 mb-4 leading-loose">
               Modernize your <span className="relative inline-block">
                 <span className="bg-indigo-100 text-indigo-600 px-2 py-1 rounded-md">
                   Oncology Clinical Operations
@@ -219,7 +219,7 @@ export default function Home() {
         <section id="security" className="relative bg-indigo-50 py-16 overflow-hidden">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-8">Security and Scalability</h2>
-            <a href="https://trust.withoncore.com" target="_" className="inline-block bg-button text-white px-6 py-3 rounded-full hover:bg-darker transition">
+            <a href="https://trust.useoncare.com" target="_" className="inline-block bg-button text-white px-6 py-3 rounded-full hover:bg-darker transition">
               Access Our Trust Center
             </a>
           </div>
@@ -293,7 +293,7 @@ export default function Home() {
                   <li><a href="#about" className="text-gray-900 hover:underline">Why Oncare?</a></li>
                   <li><a href="#use-cases" className="text-gray-900 hover:underline">Use Cases</a></li>
                   <li><a href="#" className="text-gray-900 hover:underline">How it works</a></li>
-                  <li><a href="https://trust.withoncore.com" target="_" className="text-gray-900 hover:underline">Security and Stability</a></li>
+                  <li><a href="https://trust.useoncare.com" target="_" className="text-gray-900 hover:underline">Security and Stability</a></li>
                 </ul>
               </div>
 
