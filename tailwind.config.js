@@ -19,7 +19,8 @@ module.exports = {
         lighterBackgroundDiv: '#F5F3FE',
         icon: '#A698FF',
         footer: '#F7F8FD',
-        usecasesBackground: '#F4F1FF'
+        usecasesBackground: '#F4F1FF',
+        gradientEnd: '#EFF3FF',
       },
       fontFamily: {
         sans: ['Manrope', 'sans-serif'], // Manrope as the default sans-serif font

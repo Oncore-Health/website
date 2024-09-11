@@ -74,7 +74,7 @@ export default function Navbar() {
             <a href="https://platform.withoncore.com" className="border border-button text-button font-medium px-4 py-2 rounded-full hover:bg-button hover:text-white transition">
               Log In
             </a>
-            <a href="mailto:info@withoncore.com" className="bg-button text-white font-medium px-4 py-2 rounded-full hover:bg-darker transition">
+            <a href="mailto:abhinav@useoncare.com" className="bg-button text-white font-medium px-4 py-2 rounded-full hover:bg-darker transition">
               Schedule a Demo
             </a>
           </div>
@@ -104,7 +104,7 @@ export default function Navbar() {
             <a href="#" className="block text-md text-black hover:text-primary">About Us</a>
             <div className="mt-4">
               <a href="https://platform.withoncore.com" className="block w-full text-center border border-button text-button font-medium px-4 py-2 rounded-full hover:bg-button hover:text-white transition mb-4">Log In</a>
-              <a href="mailto:info@withoncore.com" className="block w-full text-center bg-button text-white font-medium px-4 py-2 rounded-full hover:bg-darker transition">Schedule a Demo</a>
+              <a href="mailto:abhinav@useoncare.com" className="block w-full text-center bg-button text-white font-medium px-4 py-2 rounded-full hover:bg-darker transition">Schedule a Demo</a>
             </div>
           </nav>
         </div>
