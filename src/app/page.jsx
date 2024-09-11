@@ -27,7 +27,7 @@ export default function Home() {
               <a href="mailto:abhinav@useoncare.com" className="bg-button text-white px-6 py-3 rounded-full hover:bg-darker transition">
                 Schedule a Demo
               </a>
-              <a href="https://platform.withoncore.com" target="_" className="border border-button text-button px-6 py-3 rounded-full hover:bg-button hover:text-white transition">
+              <a href="https://platform.useoncare.com" target="_" className="border border-button text-button px-6 py-3 rounded-full hover:bg-button hover:text-white transition">
                 Log In
               </a>
             </div>

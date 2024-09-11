@@ -71,7 +71,7 @@ export default function Navbar() {
             <a href="#built-by" className="text-md text-black hover:text-primary">About Us</a>
           </nav>
           <div className="flex items-center space-x-4">
-            <a href="https://platform.withoncore.com" className="border border-button text-button font-medium px-4 py-2 rounded-full hover:bg-button hover:text-white transition">
+            <a href="https://platform.useoncare.com" className="border border-button text-button font-medium px-4 py-2 rounded-full hover:bg-button hover:text-white transition">
               Log In
             </a>
             <a href="mailto:abhinav@useoncare.com" className="bg-button text-white font-medium px-4 py-2 rounded-full hover:bg-darker transition">
@@ -103,7 +103,7 @@ export default function Navbar() {
             <a href="#" className="block text-md text-black hover:text-primary">Integrations</a>
             <a href="#" className="block text-md text-black hover:text-primary">About Us</a>
             <div className="mt-4">
-              <a href="https://platform.withoncore.com" className="block w-full text-center border border-button text-button font-medium px-4 py-2 rounded-full hover:bg-button hover:text-white transition mb-4">Log In</a>
+              <a href="https://platform.useoncare.com" className="block w-full text-center border border-button text-button font-medium px-4 py-2 rounded-full hover:bg-button hover:text-white transition mb-4">Log In</a>
               <a href="mailto:abhinav@useoncare.com" className="block w-full text-center bg-button text-white font-medium px-4 py-2 rounded-full hover:bg-darker transition">Schedule a Demo</a>
             </div>
           </nav>
