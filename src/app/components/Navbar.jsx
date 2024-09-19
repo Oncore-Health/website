@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between p-4 bg-white px-8 pt-4">
         {/* Logo Section */}
         <div className="flex items-center space-x-2">
-          <img src="/oncore.png" alt="Oncore AI Logo" className="h-8" />
+          <img src="/oncare.png" alt="Oncore AI Logo" className="h-6" />
           <span className="text-2xl font-bold text-black">Oncare</span>
           <img src="/ai.svg" alt="AI rectangle" className="h-6" />
         </div>

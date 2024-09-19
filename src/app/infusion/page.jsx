@@ -1,6 +1,6 @@
 import { IoIosArrowDown } from "react-icons/io";
 import { IoMdMenu } from "react-icons/io";
-import Navbar from './components/Navbar';
+import Navbar from '../components/Navbar';
 
 export default function Home() {
   return (
@@ -230,7 +230,7 @@ export default function Home() {
               <img src="/oncare.png" alt="Oncore Logo" className="object-contain max-h-[150%]" />
             </div>
           </div>
-          
+
           <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-10 rounded-3xl shadow-xl h-64 w-[18rem] mx-auto">
               <h3 className="text-xl font-semibold text-gray-900">Single Sign On Ready</h3>
