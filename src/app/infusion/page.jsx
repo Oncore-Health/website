@@ -1,6 +1,7 @@
 import { IoIosArrowDown } from "react-icons/io";
 import { IoMdMenu } from "react-icons/io";
 import Navbar from '../components/Navbar';
+import FAQSection from './FAQSection';
 
 export default function Home() {
   return (
@@ -9,264 +10,287 @@ export default function Home() {
         <Navbar/>
 
         {/* Hero Section */}
-        <section id="hero" className="flex flex-col items-center text-center p-8 md:flex-row md:justify-between md:items-center px-16 bg-gradient-to-b from-white to-gradientEnd">
-          <div className="md:w-1/2 text-left">
-            <h1 className="text-4xl font-[1000] text-gray-900 mb-4 leading-loose">
-              Modernize your <span className="relative inline-block">
-                <span className="bg-indigo-100 text-indigo-600 px-2 py-1 rounded-md">
-                  Oncology Clinical Operations
-                </span></span> with AI
-              <span className="inline-block align-top">
-                <img src="/sparkle.svg" alt="Sparkle Image" className="inline-block w-6 h-6 ml-1 align-top" />
+        <section id="hero" className="flex flex-col items-center text-center md:flex-row md:justify-between md:items-center bg-gradient-to-b from-white to-[#f5f6fc] min-h-[80vh]">
+          {/* Text section */}
+          <div className="md:w-1/2 text-left p-8 md:pl-[6rem]">
+            <h2 className="text-3xl sm:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
+              AI 
+              <span className="inline-block my-2">
+                <img src="/sparkle.svg" alt="Sparkle Image" className="inline-block w-6 h-6" style={{ verticalAlign: 'text-top' }} />
+              </span> 
+              for <span className="relative inline-block">
+                <span className="bg-indigo-100 text-indigo-600 px-2 py-1 mt-2 rounded-md block">
+                  Infusion Centers
+                </span>
               </span>
-            </h1>
-            <p className="text-lg text-gray-600 mb-8">
-              Oncare AI automates operational workflows to help treat more cancer patients while reducing administrative burden for providers.
+            </h2>
+
+            <p className="text-lg mb-8 max-w-md">
+              Intuitive AI that enables infusion center teams to treat more patients, improve nursing satisfaction, and enhance patient experience.
             </p>
-            <div className="flex space-x-4 justify-center md:justify-start">
-              <a href="mailto:abhinav@useoncare.com" className="bg-button text-white px-6 py-3 rounded-full hover:bg-darker transition">
+            <div className="flex space-x-4 justify-start">
+              <a href="mailto:abhinav@useoncare.com" className="bg-[#6955EA] text-white px-6 py-3 rounded-full hover:bg-[#5648C2] transition">
                 Schedule a Demo
               </a>
-              <a href="https://platform.useoncare.com" target="_" className="border border-button text-button px-6 py-3 rounded-full hover:bg-button hover:text-white transition">
+              <a href="https://platform.useoncare.com" target="_" className="border border-[#6955EA] text-[#6955EA] px-6 py-3 rounded-full hover:bg-[#6955EA] hover:text-white transition">
                 Log In
               </a>
             </div>
           </div>
+
+          {/* Image section */}
           <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end relative">
-            {/* Image with Rounded Diamond Shape */}
             <div className="relative">
-              <img src="/background-image.svg" alt="Background Image"/>
-            </div>
-          </div>
-        </section>
-        
-        <section id="built-by">
-          <div className="relative z-10">
-            <div className="relative mx-auto bg-white rounded-xl shadow-lg shadow-2xl py-8 px-6 text-center lg:-mt-20 max-w-7xl bg-secondary">
-              <h2 className="text-xl font-bold text-gray-900 mb-6">
-                Built with Experts from
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-                <img src="/penn_logo.png" alt="Penn" className="h-16 mx-auto" />
-                <img src="/columbia.png" alt="Columbia" className="h-16 mx-auto" />
-                <img src="/duke_logo.png" alt="Duke" className="h-16 mx-auto" />
-                <img src="/stanford_logo.png" alt="Stanford" className="h-16 mx-auto" />
-                <img src="/united_logo.jpg" alt="United" className="h-16 mx-auto" />
-                <img src="/gw_logo.png" alt="GW" className="h-16 mx-auto" />
-              </div>
+              <img src="/daily-calendar.png" alt="Daily Calendar Infusion Center Interface" className="w-full max-w-xl lg:max-w-2xl xl:max-w-3xl"/>
             </div>
           </div>
         </section>
 
-        <section id="about">
-
-        <div className="text-center mt-12">
-            <h2 className="text-4xl font-bold text-gray-900">Why Oncare?</h2>
+        {/* New Section for Optimizing Variables */}
+        <section id="optimizing-variables" className="bg-white py-16">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold">The Problem</h2>
+            <p className="text-lg max-w-2xl mx-auto mb-8 px-[2vw] mt-4">
+              Infusion Center Operations are extremely challenging, leading to <span className="font-bold">complex scheduling</span> and <span className="font-bold">staffing hurdles</span>.
+            </p>
           </div>
-
-          <div className="bg-white py-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              <div className="flex flex-col justify-center items-start space-y-4 lg:mx-[10vw] mx-[5vw]">
-                <h2 className="text-3xl sm:text-4xl font-bold text-black mb-2">
-                  Improve Patient <span className="text-black underline decoration-primary decoration-4">Access</span>
-                </h2>
-                <p className="text-gray-700 text-lg">
-                  Oncare’s AI helps oncology teams increase throughput by smartly analyzing patient context to enable smarter scheduling and care coordination.
-                </p>
-              </div>
-              <div className="relative flex justify-end">
-                <img src="/patient_access.svg" alt="Patient Access" className="object-cover" />
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8">
-              <div className="relative flex justify-start">
-                <img src="/nursing_satisfaction.svg" alt="Nursing Satisfaction" className="object-cover" />
-              </div>
-              <div className="flex flex-col justify-center items-start space-y-4 lg:mx-[10vw] mx-[5vw]">
-                <h2 className="text-3xl sm:text-4xl font-bold text-black mb-2">
-                  Increase Nursing <span className="text-black underline decoration-primary decoration-4">Satisfaction</span>
-                </h2>
-                <p className="text-gray-700 text-lg">
-                  Better scheduling, staffing, and capacity management reduces nursing overtime and burnout, improves lunch break adherence, and alleviates demand crunches during shifts.
-                </p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8">
-              <div className="flex flex-col justify-center items-start space-y-4 lg:mx-[10vw] mx-[5vw]">
-                <h2 className="text-3xl sm:text-4xl font-bold text-black mb-2">
-                  Unlock Care Team <span className="text-black underline decoration-primary decoration-4">Efficiency</span>
-                </h2>
-                <p className="text-gray-700 text-lg">
-                  Automate the logistics that care teams need to complete to effectively navigate and treat patients, saving hours for providers every day.
-                </p>
-              </div>
-              <div className="relative flex justify-end">
-                <img src="/care_efficiency.svg" alt="Care Efficiency" className="object-cover" />
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8">
-              <div className="relative flex justify-start">
-                <img src="/patient_wait.svg" alt="Patient Wait Times" className="object-cover" />
-              </div>
-              <div className="flex flex-col justify-center items-start space-y-4 lg:mx-[10vw] mx-[5vw]">
-                <h2 className="text-3xl sm:text-4xl font-bold text-black mb-2">
-                  Reduce Patient <span className="text-black underline decoration-primary decoration-4">Wait Times</span>
-                </h2>
-                <p className="text-gray-700 text-lg">
-                  Improved coordination across care teams helps orchestrate last-minute changes and avoid care delays, ensuring a stronger experience for patients and their families.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-        <section id="use-cases" className="bg-usecasesBackground py-12">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900">Use Cases</h2>
-          </div>
-
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 px-6 mb-12">
-            <div className="bg-white px-8 py-16 rounded-3xl shadow-lg hover:shadow-xl transition duration-300">
-              <div className="flex justify-center mb-6">
-                <img src="/clinic.png" alt="Outpatient Clinics Icon" className="h-16 w-16 text-purple-400"/>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-8 text-center">
-                AI for <span className="font-bold">Outpatient Clinics</span>
-              </h3>
-              <div className="text-center">
-                <a href="mailto:abhinav@useoncare.com" className="bg-tertiary text-primary px-4 py-2 rounded-full">
-                  Contact Us
-                </a>
-              </div>
-            </div>
-
-            <div className="bg-white px-8 py-16 rounded-3xl shadow-lg hover:shadow-xl transition duration-300">
-              <div className="flex justify-center mb-6">
-                <img src="/infuse.png" alt="Infusion Centers Icon" className="h-16 w-16 text-purple-400"/>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-8 text-center">
-                AI for <span className="font-bold">Infusion Centers</span>
-              </h3>
-              <div className="text-center">
-                <a href="#" className="bg-button text-white px-4 py-2 rounded-full hover:bg-darker">
-                  Learn More
-                </a>
-              </div>
-            </div>
-
-            <div className="bg-white px-8 py-16 rounded-3xl shadow-lg hover:shadow-xl transition duration-300">
-              <div className="flex justify-center mb-6">
-                <img src="/medicine.png" alt="Pharmacies Icon" className="h-16 w-16 text-purple-400"/>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-8 text-center">
-                AI for <span className="font-bold">Pharmacies</span>
-              </h3>
-              <div className="text-center">
-                <a href="mailto:abhinav@useoncare.com" className="bg-tertiary text-primary px-4 py-2 rounded-full disabled">
-                  Contact Us
-                </a>
-              </div>
-            </div>
           
+          <div className="flex justify-center">
+            <div className="relative">
+              <img 
+                src="/optimizing_variables.png" 
+                alt="Optimizing Dozens of Variables" 
+                className="w-full max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] xl:max-w-[80%] h-auto"
+              />
+            </div>
+          </div>
+        </section>
+
+
+        <section id="status-quo" className="bg-[#F9F9FA] py-12">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900">The Status Quo</h2>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="relative">
+              <img 
+                src="/scheduling_problem.png" 
+                alt="Optimizing Dozens of Variables" 
+                className="w-full max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] xl:max-w-[80%] h-auto mx-auto"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* New Section for Optimizing Variables */}
+        <section id="optimizing-variables" className="bg-white py-16">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold">The Solution</h2>
+            <p className="text-lg max-w-2xl mx-auto mb-8 px-[2vw] mt-4">
+              Oncare strengthens infusion center operations by <span className="font-bold">improving patient access, reducing nursing burden and overtime, & enhancing care team efficiency</span>
+            </p>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="relative">
+              <img 
+                src="/capacity_management.png" 
+                alt="AI-based capacity management for Infusion Centers: Increase Chair Time Utilization, Smooth Demand Peaks, Reduce Nursing Overtime, Decrease Patient Wait Times" 
+                className="w-full max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] xl:max-w-[80%] h-auto mx-auto"
+              />
+            </div>
           </div>
         </section>
 
         <section id="learn-more" className="relative bg-darker py-16">
           <div className="text-center text-white">
-            <h2 className="text-4xl font-bold mb-4">How it Works</h2>
+            <h2 className="text-4xl font-bold mb-4">Streamlined EHR Integration</h2>
             <p className="text-lg max-w-2xl mx-auto mb-8 px-[2vw]">
-              Intuitive AI that enables infusion center teams to treat more patients, improve nursing satisfaction, and enhance patient experience.
+               Oncare integrates seamlessly with all leading EHRs and is <span className="font-bold text-[#A7DBFF] bg-[#5648C2] max-w-2xl mx-auto mb-8 px-1 py-1 rounded-lg">able to use</span> <span className="font-bold text-[#A7DBFF] bg-[#5648C2] max-w-2xl mx-auto mb-8 px-1 py-1 rounded-lg">several different methods</span>, including FHIR, SFTP, HL7, & EHR APIs.
             </p>
-            <a href="#" className="inline-block bg-white text-indigo-900 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">
-              Learn More
-            </a>
+
           </div>
 
-          <div className="relative flex justify-center">
-            <img src="/product_screenshot.png" alt="Oncare AI Infusion Centers Product Screenshot" 
-                 className="w-full max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] xl:max-w-[80%] h-auto" />
+          <div className="flex justify-center">
+            <div className="relative">
+              <img 
+                src="/ehr_integration.png" 
+                alt="Optimizing Dozens of Variables" 
+                className="w-full max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] xl:max-w-[60%] h-auto mx-auto"
+              />
+            </div>
+          </div>
+
+          <div className="text-center text-white mt-8">
+            <p className="text-lg max-w-2xl mx-auto mb-8 px-[2vw]">
+               Oncare streamlines implementation by <span className="font-bold text-[#A7DBFF] bg-[#5648C2] max-w-2xl mx-auto mb-8 px-1 py-1 rounded-lg">only requiring read-only</span> integration via several options, including <span className="font-bold text-[#A7DBFF] bg-[#5648C2] max-w-2xl mx-auto mb-8 px-1 py-1 rounded-lg">flat files</span>.
+            </p>
           </div>
         </section>
 
+        <section id="about">
+          <div className="text-center mt-12">
+            <h2 className="text-4xl font-bold text-gray-900">Key Features</h2>
+          </div>
 
-        <section id="integrations" className="py-16">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900">
-              Oncare Integrates with <span className="underline decoration-primary decoration-4">Leading EHRs</span>
+          <div className="py-12 space-y-12">
+            {/* First section: Image on the left, text on the right */}
+            <div className="flex flex-col lg:flex-row items-center lg:justify-start">
+              <img src="/nursing-assignments.png" alt="Nursing Assignments" className="object-cover w-full max-w-lg" />
+              <div className="flex flex-col justify-center items-start lg:pl-8 mt-6 lg:mt-0 max-w-2xl p-8"> {/* Left-aligned text */}
+                <h2 className="text-3xl sm:text-4xl font-bold text-black mb-2">
+                  AI-powered nursing assignments
+                </h2>
+                <p className="text-gray-700 text-lg">
+                  Load balancing of patient volume across nursing team by optimizing against 20+ key inputs (e.g., acuity, infusion length, room and isolation status requirements, pharmacy lead times, etc.)
+                </p>
+              </div>
+            </div>
+
+            {/* Second section: Text on the left, image on the right */}
+            <div className="flex flex-col lg:flex-row-reverse items-center lg:justify-end">
+              <img src="/smart-templates.png" alt="Smart Templates" className="object-cover w-full max-w-lg" />
+              <div className="flex flex-col justify-center items-start lg:pr-8 mt-6 lg:mt-0 max-w-2xl lg:ml-auto p-8"> 
+                <h2 className="text-3xl sm:text-4xl font-bold text-black mb-2 text-right w-full"> {/* Applied w-full and text-right */}
+                  Smart scheduling templates
+                </h2>
+                <p className="text-gray-700 text-lg text-right w-full"> {/* Applied w-full and text-right */}
+                  Load balancing of patient volume across nursing team by optimizing against 20+ key inputs (e.g., acuity, infusion length, room and isolation status requirements, pharmacy lead times, etc.)
+                </p>
+              </div>
+            </div>
+
+
+            {/* Third section: Image on the left, text on the right */}
+            <div className="flex flex-col lg:flex-row items-center lg:justify-start">
+              <img src="/capacity-management.png" alt="Capacity Management" className="object-cover w-full max-w-lg" />
+              <div className="flex flex-col justify-center items-start lg:pl-8 mt-6 lg:mt-0 max-w-2xl p-8"> {/* Left-aligned text */}
+                <h2 className="text-3xl sm:text-4xl font-bold text-black mb-2">
+                  Real-time capacity management
+                </h2>
+                <p className="text-gray-700 text-lg">
+                  Load balancing of patient volume across nursing team by optimizing against 20+ key inputs (e.g., acuity, infusion length, room and isolation status requirements, pharmacy lead times, etc.)
+                </p>
+              </div>
+            </div>
+
+            {/* Fourth section: Text on the left, image on the right */}
+            <div className="flex flex-col lg:flex-row-reverse items-center lg:justify-end">
+              <img src="/dynamic-changes.png" alt="Dynamic Changes" className="object-cover w-full max-w-lg" />
+              <div className="flex flex-col justify-center items-start lg:pr-8 mt-6 lg:mt-0 max-w-2xl lg:ml-auto p-8"> 
+                <h2 className="text-3xl sm:text-4xl font-bold text-black mb-2 text-right w-full"> {/* Applied w-full and text-right */}
+                  Dynamic Changes & Exception Handling
+                </h2>
+                <p className="text-gray-700 text-lg text-right w-full"> {/* Applied w-full and text-right */}
+                  Add-on scheduling recommendations & conversational AI tools to optimally handle last-minute changes, and plan coverage to handle last-minute staffing changes.
+                </p>
+              </div>
+            </div>
+
+
+            {/* Fifth section: Image on the left, text on the right */}
+            <div className="flex flex-col lg:flex-row items-center lg:justify-start">
+              <img src="/platform-configurability.png" alt="Platform Configurability" className="object-cover w-full max-w-lg" />
+              <div className="flex flex-col justify-center items-start lg:pl-8 mt-6 lg:mt-0 max-w-2xl p-8"> {/* Left-aligned text */}
+                <h2 className="text-3xl sm:text-4xl font-bold text-black mb-2">
+                  Platform Configurability
+                </h2>
+                <p className="text-gray-700 text-lg">
+                  Oncare’s AI engine is customizable across care settings based on dozens of advanced variables and staffing/scheduling inputs.
+                </p>
+              </div>
+            </div>
+
+            {/* Sixth section: Text on the left, image on the right */}
+            <div className="flex flex-col lg:flex-row-reverse items-center lg:justify-end">
+              <img src="/smart-reporting.png" alt="Smart Reporting" className="object-cover w-full max-w-lg" />
+              <div className="flex flex-col justify-center items-start lg:pr-8 mt-6 lg:mt-0 max-w-2xl lg:ml-auto p-8"> 
+                <h2 className="text-3xl sm:text-4xl font-bold text-black mb-2 text-right w-full"> {/* Applied w-full and text-right */}
+                  Smart Reporting
+                </h2>
+                <p className="text-gray-700 text-lg text-right w-full"> {/* Applied w-full and text-right */}
+                  Improve capacity management with automated, intelligent reports that help staff monitor performance goals, make proactive decisions, and quickly spot operational issues that need attention.
+                </p>
+              </div>
+            </div>
+
+            {/* Final section with the plus icon and text */}
+          <div className="flex justify-center items-center space-x-4 max-w-4xl mx-auto mt-12">
+            {/* Plus Icon */}
+            <div className="flex items-center justify-center w-12 h-12 bg-[#F5F7FF] rounded-lg shadow-md">
+              <span className="text-[#5648C2] text-2xl font-bold">+</span>
+            </div>
+
+            {/* Text box */}
+            <div className="flex items-center bg-[#F5F7FF] px-8 py-6 rounded-lg shadow-md">
+              <p className="text-[#5648C2] font-semibold text-lg">
+                Expanding to improve many more infusion center operational workflows
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <section className="bg-gray-50 py-12">
+          <div className="container max-w-6xl mx-auto text-center">
+            <h2 className="text-4xl font-bold text-gray-900 mb-10">Testimonials</h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-8">
+              {/* Testimonial 1 */}
+              <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col max-w-sm mx-auto md:ml-auto lg:ml-auto">
+                <div className="text-left mb-6">
+                  <img src="/quotation-marks.svg" alt="quotation marks" className="w-8 h-8 inline-block mr-2" />
+                  <p className="text-gray-700 mt-2 text-left">
+                    Our Oncology Providers Have More Available Infusion Appointments.
+                  </p>
+                </div>
+                <p className="mt-4 italic font-bold text-left text-gray-900">VP of Oncology Services</p>
+              </div>
+
+              {/* Testimonial 2 */}
+              <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col max-w-sm mx-auto">
+                <div className="text-left mb-6">
+                  <img src="/quotation-marks.svg" alt="quotation marks" className="w-8 h-8 inline-block mr-2" />
+                  <p className="text-gray-700 mt-2 text-left">
+                    With Oncare, there are no more nursing peaks and valleys.
+                  </p>
+                </div>
+                <p className="mt-4 italic font-bold text-left text-gray-900">VP of Director of Nursing, Oncology</p>
+              </div>
+
+              {/* Testimonial 3 */}
+              <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col max-w-sm mx-auto md:mr-auto lg:mr-auto">
+                <div className="text-left mb-6">
+                  <img src="/quotation-marks.svg" alt="quotation marks" className="w-8 h-8 inline-block mr-2" />
+                  <p className="text-gray-700 mt-2 text-left">
+                    Right now, our nurses sometimes don't get lunch breaks until 4 PM! Oncare solves this.
+                  </p>
+                </div>
+                <p className="mt-4 italic font-bold text-left text-gray-900">Nursing Manager, Infusion Center</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <FAQSection/>
+
+        <section className="bg-[#2E266F] py-24 text-center"> {/* Increased top and bottom padding */}
+          <div className="container mx-auto">
+            {/* Icon */}
+            <div className="flex justify-center mb-10"> {/* Added more margin at the bottom */}
+              <img src="/logo-alternate.png" alt="Oncare Icon" className="w-12 h-12" />
+            </div>
+
+            {/* Headline */}
+            <h2 className="text-3xl font-bold text-white mb-12 max-w-2xl mx-auto"> {/* Added max-width and margin */}
+              Get the most out of your infusion center with Oncare
             </h2>
-          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 justify-items-center max-w-5xl mx-auto">
-            <img src="/epic_logo.png" alt="Epic" className="h-16" />
-            <img src="/athena_logo.png" alt="Athena Health" className="h-16" />
-            <img src="/oracle_logo.png" alt="Oracle Cerner" className="h-16" />
-            <img src="/nextgen_logo.png" alt="Nextgen" className="h-16" />
-            <img src="/oncoemr.png" alt="OncoEMR" className="h-16" />
-            <img src="/meditech_logo.jpg" alt="Meditech" className="h-16" />
-          </div>
-
-          <div className="text-center mt-12 text-primary hover:text-darker hover:underline">
-            <a href="mailto:abhinav@useoncare.com" className="font-medium flex justify-center items-center">
-              Schedule a demo <span className="ml-2">→</span>
+            {/* Contact Button */}
+            <a href="mailto:info@useoncare.com" className="bg-[#5648C2] text-white px-8 py-4 rounded-full text-lg hover:bg-[#4537a8] transition"> {/* Increased padding for the button */}
+              Contact us
             </a>
-          </div>
-        </section>
-
-        <section id="security" className="relative bg-indigo-50 py-16 overflow-hidden">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-8">Security and Scalability</h2>
-            <a href="https://trust.useoncare.com" target="_" className="inline-block bg-button text-white px-6 py-3 rounded-full hover:bg-darker transition">
-              Access Our Trust Center
-            </a>
-          </div>
-
-          {/* Oncore logo as background */}
-          <div className="absolute top-0 right-[-15%] h-full w-full max-w-2xl opacity-10 z-0 pointer-events-none hidden lg:block">
-            <div className="relative h-full w-full flex items-center justify-center">
-              <img src="/oncare.png" alt="Oncore Logo" className="object-contain max-h-[150%]" />
-            </div>
-          </div>
-
-          <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-10 rounded-3xl shadow-xl h-64 w-[18rem] mx-auto">
-              <h3 className="text-xl font-semibold text-gray-900">Single Sign On Ready</h3>
-            </div>
-
-            <div className="bg-white p-10 rounded-3xl shadow-xl h-64 w-[18rem] mx-auto">
-              <h3 className="text-xl font-semibold text-gray-900">Streamlined EHR Integration</h3>
-            </div>
-
-            <div className="bg-white p-10 rounded-3xl shadow-xl h-64 w-[18rem] mx-auto">
-              <h3 className="text-xl font-semibold text-gray-900">Custom Governance Controls</h3>
-            </div>
-
-            <div className="bg-white p-10 rounded-3xl shadow-xl h-64 w-[18rem] mx-auto">
-              <h3 className="text-xl font-semibold text-gray-900">HIPAA-Compliant</h3>
-            </div>
-          </div>
-
-          <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-0 mt-8">
-            <div className="flex justify-center lg:justify-end">
-              <div className="bg-white p-10 rounded-3xl shadow-xl h-64 w-[18rem]">
-                <h3 className="text-xl font-semibold text-gray-900">Secure Cloud</h3>
-              </div>
-            </div>
-
-            <div className="flex justify-center">
-              <div className="bg-white p-10 rounded-3xl shadow-xl h-64 w-[18rem]">
-                <h3 className="text-xl font-semibold text-gray-900">Encrypted Data</h3>
-              </div>
-            </div>
-
-            <div className="flex justify-center lg:justify-start">
-              <div className="bg-white p-10 rounded-3xl shadow-xl h-64 w-[18rem]">
-                <h3 className="text-xl font-semibold text-gray-900">Smart Analytics and Reporting</h3>
-              </div>
-            </div>
           </div>
         </section>
 
