@@ -316,8 +316,8 @@ export default function Home() {
                   Platform
                 </h4>
                 <ul className="space-y-2">
-                  <li><a href="#about" className="text-gray-900 hover:underline">Why Oncare?</a></li>
-                  <li><a href="#use-cases" className="text-gray-900 hover:underline">Use Cases</a></li>
+                  <li><a href="/#about" className="text-gray-900 hover:underline">Why Oncare?</a></li>
+                  <li><a href="/#use-cases" className="text-gray-900 hover:underline">Use Cases</a></li>
                   <li><a href="#" className="text-gray-900 hover:underline">How it works</a></li>
                   <li><a href="https://trust.useoncare.com" target="_" className="text-gray-900 hover:underline">Security and Stability</a></li>
                 </ul>

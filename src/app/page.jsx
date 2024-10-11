@@ -152,7 +152,7 @@ export default function Home() {
                 AI for <span className="font-bold">Infusion Centers</span>
               </h3>
               <div className="text-center">
-                <a href="#" className="bg-button text-white px-4 py-2 rounded-full hover:bg-darker">
+                <a href="/infusion" className="bg-button text-white px-4 py-2 rounded-full hover:bg-darker">
                   Learn More
                 </a>
               </div>
@@ -304,7 +304,7 @@ export default function Home() {
                   Use Cases
                 </h4>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-900 hover:underline">AI for Infusion Centers</a></li>
+                  <li><a href="/infusion" className="text-gray-900 hover:underline">AI for Infusion Centers</a></li>
                   <li><a href="#" className="text-gray-900 hover:underline">AI for Outpatient Clinics</a></li>
                   <li><a href="#" className="text-gray-900 hover:underline">AI for Pharmacies</a></li>
                 </ul>
