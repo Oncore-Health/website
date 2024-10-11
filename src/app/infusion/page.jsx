@@ -264,7 +264,7 @@ export default function Home() {
                 <div className="text-left mb-6">
                   <img src="/quotation-marks.svg" alt="quotation marks" className="w-8 h-8 inline-block mr-2" />
                   <p className="text-gray-700 mt-2 text-left">
-                    Right now, our nurses sometimes don't get lunch breaks until 4 PM! Oncare solves this.
+                    Right now, our nurses sometimes don&apos;t get lunch breaks until 4 PM! Oncare solves this.
                   </p>
                 </div>
                 <p className="mt-4 italic font-bold text-left text-gray-900">Nursing Manager, Infusion Center</p>
