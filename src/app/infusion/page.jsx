@@ -50,7 +50,7 @@ export default function Home() {
         <section id="optimizing-variables" className="bg-white py-16">
           <div className="text-center mb-8">
             <h2 className="text-4xl font-bold">The Problem</h2>
-            <p className="text-lg max-w-2xl mx-auto mb-8 px-[2vw] mt-4">
+            <p className="lg:text-2xl text-lg max-w-2xl mx-auto mb-8 px-[2vw] mt-8">
               Infusion Center Operations are extremely challenging, leading to <span className="font-bold">complex scheduling</span> and <span className="font-bold">staffing hurdles</span>.
             </p>
           </div>
@@ -87,7 +87,7 @@ export default function Home() {
         <section id="optimizing-variables" className="bg-white py-16">
           <div className="text-center mb-8">
             <h2 className="text-4xl font-bold">The Solution</h2>
-            <p className="text-lg max-w-2xl mx-auto mb-8 px-[2vw] mt-4">
+            <p className="lg:text-2xl text-lg max-w-5xl mx-auto mb-8 px-[2vw] mt-8">
               Oncare strengthens infusion center operations by <span className="font-bold">improving patient access, reducing nursing burden and overtime, & enhancing care team efficiency</span>
             </p>
           </div>
@@ -105,26 +105,26 @@ export default function Home() {
 
         <section id="learn-more" className="relative bg-darker py-16">
           <div className="text-center text-white">
-            <h2 className="text-4xl font-bold mb-4">Streamlined EHR Integration</h2>
-            <p className="text-lg max-w-2xl mx-auto mb-8 px-[2vw]">
-               Oncare integrates seamlessly with all leading EHRs and is <span className="font-bold text-[#A7DBFF] bg-[#5648C2] max-w-2xl mx-auto mb-8 px-1 py-1 rounded-lg">able to use</span> <span className="font-bold text-[#A7DBFF] bg-[#5648C2] max-w-2xl mx-auto mb-8 px-1 py-1 rounded-lg">several different methods</span>, including FHIR, SFTP, HL7, & EHR APIs.
-            </p>
-
+            <h2 className="text-4xl font-bold">Streamlined EHR Integration</h2>
+            <p className="lg:text-2xl text-lg max-w-4xl mx-auto mb-8 px-[2vw] mt-8" style={{ lineHeight: '2' }}>
+              Oncare integrates seamlessly with all leading EHRs and is <span className="font-bold text-[#A7DBFF] bg-[#5648C2] max-w-2xl mx-auto mb-8 px-1 py-1 rounded-lg">able to use</span> <span className="font-bold text-[#A7DBFF] bg-[#5648C2] max-w-2xl mx-auto mb-8 px-1 py-1 rounded-lg">several different methods</span>, 
+              including FHIR, SFTP, HL7, & EHR APIs.</p>
           </div>
-
           <div className="flex justify-center">
             <div className="relative">
-              <img 
+              <img
                 src="/ehr_integration.png" 
-                alt="Optimizing Dozens of Variables" 
+                alt="Optimizing Dozens of Variables"
                 className="w-full max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] xl:max-w-[60%] h-auto mx-auto"
               />
             </div>
           </div>
-
           <div className="text-center text-white mt-8">
-            <p className="text-lg max-w-2xl mx-auto mb-8 px-[2vw]">
-               Oncare streamlines implementation by <span className="font-bold text-[#A7DBFF] bg-[#5648C2] max-w-2xl mx-auto mb-8 px-1 py-1 rounded-lg">only requiring read-only</span> integration via several options, including <span className="font-bold text-[#A7DBFF] bg-[#5648C2] max-w-2xl mx-auto mb-8 px-1 py-1 rounded-lg">flat files</span>.
+            <p className="lg:text-2xl text-lg max-w-4xl mx-auto mb-8 px-[2vw] mt-10 mb-8" style={{ lineHeight: '2' }}> {/* Custom line-height applied directly */}
+              Oncare streamlines implementation by <span className="font-bold text-[#A7DBFF] bg-[#5648C2] max-w-2xl mx-auto mb-8 px-1 py-1 rounded-lg">
+                only requiring read-only</span> integration via several options, including <span className="font-bold text-[#A7DBFF] bg-[#5648C2] max-w-2xl mx-auto mb-8 px-1 py-1 rounded-lg">
+                flat files
+              </span>.
             </p>
           </div>
         </section>
