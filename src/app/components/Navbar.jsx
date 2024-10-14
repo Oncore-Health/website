@@ -67,11 +67,28 @@ export default function Navbar() {
                 <a href="/infusion" className="block px-4 py-2 hover:text-primary">AI Infusion Platform</a>
               </div>
             </div>*/}
+            
             <a href="/infusion" className="text-md text-black hover:text-primary">AI Infusion Platform</a>
-            <a href="/#use-cases" className="text-md text-black hover:text-primary">Use Cases</a>
+            {/* <a href="/#use-cases" className="text-md text-black hover:text-primary">Use Cases</a> */}
+            {/* Dropdown for Use Cases */}
+            <div className="relative group text-md">
+              <div className="flex items-center py-2 cursor-pointer" onClick={toggleDropdown}>
+                <span className="text-black">Use Cases</span>
+                <IoIosArrowDown className="inline-block ml-1 text-primary transition-transform duration-200" />
+              </div>
+              
+              {/* Dropdown Menu */}
+              {isDropdownOpen && (
+                <div className="absolute w-48 bg-white border border-gray-200 shadow-lg rounded-md mt-2 z-10">
+                  <a href="/aicOperations" className="block px-4 py-2 hover:text-primary">AIC</a>
+                  <a href="/ccOperations" className="block px-4 py-2 hover:text-primary">Health Systems</a>
+                </div>
+              )}
+            </div>
             <a href="/#" className="text-md text-black hover:text-primary">Who We Serve</a>
             <a href="/#integrations" className="text-md text-black hover:text-primary">Integrations</a>
-            <a href="/#built-by" className="text-md text-black hover:text-primary">About Us</a>
+            <a href="/about" className="text-md text-black hover:text-primary">About Us</a>
+            <a href="/careers" className="text-md text-black hover:text-primary">Careers</a>
           </nav>
           <div className="flex items-center space-x-4">
             <a href="https://platform.useoncare.com" className="border border-button text-button font-medium px-4 py-2 rounded-full hover:bg-button hover:text-white transition">

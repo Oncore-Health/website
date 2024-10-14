@@ -25,7 +25,29 @@ module.exports = {
       fontFamily: {
         sans: ['Manrope', 'sans-serif'], // Manrope as the default sans-serif font
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            'ul > li::marker': {
+              color: theme('colors.black'), // Change bullet points to black
+            },
+            'ol > li::marker': {
+              color: theme('colors.black'), // Change ordered list numbers to black
+            },
+          },
+        },
+      }),
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'), // For the `prose` class
+    function ({ addBase }) {
+      addBase({
+        'button:focus': {
+          '@apply outline-none': {},
+        },
+      });
+    },
+  ],
 };

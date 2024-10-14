@@ -327,7 +327,7 @@ export default function Home() {
                 </h4>
                 <ul className="space-y-2">
                   <li><a href="#" className="text-gray-900 hover:underline">Our Company</a></li>
-                  <li><a href="#" className="text-gray-900 hover:underline">Careers</a></li>
+                  <li><a href="/careers" className="text-gray-900 hover:underline">Careers</a></li>
                 </ul>
               </div>
             </div>
