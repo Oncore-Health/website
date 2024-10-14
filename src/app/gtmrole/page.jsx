@@ -405,6 +405,7 @@ Philadelphia / Remote
                 value={formData.disability}
                 onChange={handleChange}
               >
+                <option>Choose One</option>
                 <option>I decline to disclose</option>
                 <option>I identify as disabled</option>
                 <option>I do not identify as disabled</option>
