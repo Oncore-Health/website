@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NotFoundPage = () => {
+export default function Custom404() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-white">
       {/* Full 404 Image */}
@@ -12,5 +12,3 @@ const NotFoundPage = () => {
     </div>
   );
 };
-
-export default NotFoundPage;

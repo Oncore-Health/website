@@ -36,7 +36,7 @@ export default function Careers() {
         {/* Our Culture & Core Principles */}
         <section className="bg-[#f5f6fc] py-24 px-6 md:px-16">
   <div className="text-center mb-12">
-    <h2 className="text-4xl font-bold text-gray-900">Our Culture & Core Principles</h2>
+    <h2 className="text-4xl font-bold text-gray-900">Our Culture &amp; Core Principles</h2>
   </div>
 
   <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4">
@@ -47,7 +47,7 @@ export default function Careers() {
       </div>
       <h3 className="text-xl font-semibold text-gray-900 mb-2">Teamwork</h3>
       <p className="text-gray-700">
-        We’re in this together. Collaboration and supporting each other are in our DNA. If you're someone who enjoys rolling up your sleeves and working as part of a tight-knit team, you’ll feel at home.
+        We are in this together. Collaboration and supporting each other are in our DNA. If you are someone who enjoys rolling up your sleeves and working as part of a tight-knit team, you&apos;ll feel at home.
       </p>
     </div>
 
@@ -58,7 +58,7 @@ export default function Careers() {
       </div>
       <h3 className="text-xl font-semibold text-gray-900 mb-2">Creativity</h3>
       <p className="text-gray-700">
-        We love bold ideas and out-of-the-box thinking. If you enjoy experimenting and finding unconventional solutions, you’ll fit right in!
+        We love bold ideas and out-of-the-box thinking. If you enjoy experimenting and finding unconventional solutions, you&apos;ll fit right in!
       </p>
     </div>
 
@@ -69,7 +69,7 @@ export default function Careers() {
       </div>
       <h3 className="text-xl font-semibold text-gray-900 mb-2">Intellectual Curiosity</h3>
       <p className="text-gray-700">
-        We’re all about asking the tough questions and diving deep to figure things out. If you’re always learning and eager to explore, you’ll thrive here.
+        We&apos;re all about asking the tough questions and diving deep to figure things out. If you&apos;re always learning and eager to explore, you&apos;ll thrive here.
       </p>
     </div>
   </div>
@@ -94,7 +94,7 @@ export default function Careers() {
       </div>
       <h3 className="text-xl font-semibold text-gray-900 mb-2">Diversity</h3>
       <p className="text-gray-700">
-        We believe that solving complex healthcare challenges requires bringing together a wide range of clinical, engineering, and operational perspectives. If you value the power of different viewpoints, you’ll find a place where your unique perspective is not only welcomed but essential to our success.
+        We believe that solving complex healthcare challenges requires bringing together a wide range of clinical, engineering, and operational perspectives. If you value the power of different viewpoints, you&apos;ll find a place where your unique perspective is not only welcomed but essential to our success.
       </p>
     </div>
   </div>
@@ -103,7 +103,7 @@ export default function Careers() {
         {/* Perks & Benefits */}
         <section className="bg-white py-16">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-8">Perks & Benefits</h2> {/* Added mb-4 for spacing */}
+          <h2 className="text-4xl font-bold text-gray-900 mb-8">Perks &amp; Benefits</h2> {/* Added mb-4 for spacing */}
           <p className="text-xl text-gray-600 max-w-xl mx-auto">
             At Oncare, we offer exciting benefits beyond a competitive compensation package to support our team members as we grow together.
           </p>

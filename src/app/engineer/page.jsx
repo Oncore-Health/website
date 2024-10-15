@@ -358,7 +358,7 @@ Philadelphia / Remote
           {/* Ethnicity */}
           <div className="sm:col-span-3">
             <label htmlFor="ethnicity" className="block text-sm font-medium leading-6 text-gray-900">
-              Ethnicity & Race (optional)
+              Ethnicity &amp; Race (optional)
             </label>
             <div className="mt-2">
               <select

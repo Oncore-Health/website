@@ -21,7 +21,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-xl text-[#000000] mb-8 max-w-lg">
-              Oncare helps AIC teams scale volume, improve strategic efficiency & resilience, and inform strategic growth.
+              Oncare helps AIC teams scale volume, improve strategic efficiency &amp; resilience, and inform strategic growth.
             </p>
             <div className="flex space-x-4 justify-start">
               <a href="mailto:abhinav@useoncare.com" className="bg-button text-white px-6 py-3 rounded-full hover:bg-darker transition">
@@ -43,7 +43,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto mb-12">
             <h2 className="text-4xl mb-8 font-bold text-[#000000]">Oncare for AICs</h2>
             <p className="text-2xl text-[#000000] max-w-4xl mx-auto">
-              Oncare augments your digital infrastructure to <span className="font-bold">improve your center's profitability, staff satisfaction, and patient experience</span> through AI-enabled capacity management.
+              Oncare augments your digital infrastructure to <span className="font-bold">improve your center&apos;s profitability, staff satisfaction, and patient experience</span> through AI-enabled capacity management.
             </p>
           </div>
 
@@ -166,7 +166,7 @@ export default function Home() {
           {/* Left Column: Text and Buttons */}
           <div className="md:w-1/2 text-left p-8 md:pl-[6rem] mb-8 md:mb-0">
             <h2 className="text-4xl font-bold text-gray-900 mb-6 leading-tight">
-              Explore how Oncare can modernize your AIC’s operations and care delivery today
+              Explore how Oncare can modernize your AIC&apos;s operations and care delivery today
             </h2>
             <div className="flex space-x-4">
               <a href="#" className="bg-primary text-white font-medium py-3 px-6 rounded-full">

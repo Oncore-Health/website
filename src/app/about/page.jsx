@@ -79,7 +79,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-2xl font-semibold text-[#000000] mb-2">Teamwork</h3>
                 <p className="text-[#000000] text-lg px-4 py-4 text-left">
-                    We're in this together. Collaboration and supporting each other are in our DNA. If you're someone who enjoys rolling up your sleeves and working as part of a tight-knit team, you'll feel at home.
+                    We are in this together. Collaboration and supporting each other are in our DNA. If you are someone who enjoys rolling up your sleeves and working as part of a tight-knit team, you will feel at home.
                 </p>
               </div>
 
@@ -102,7 +102,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-semibold text-[#000000] mb-2">Creativity</h3>
               <p className="text-[#000000] text-lg px-4 py-4 text-left">
-                  We love bold ideas and out-of-the-box thinking. If you enjoy experimenting and finding unconventional solutions, you'll fit right in!
+                  We love bold ideas and out-of-the-box thinking. If you enjoy experimenting and finding unconventional solutions, you will fit right in!
               </p>
               </div>
 

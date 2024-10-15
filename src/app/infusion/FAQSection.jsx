@@ -8,7 +8,7 @@ const faqs = [
   {
     question: 'How much improvement can a center expect when starting with Oncare?',
     answer:
-      'Health Systems can expect to see up to a 15% increase in chair time utilization while using the Oncare platform, 25% of their charge nurse’s time saved along with a significant decrease in patient wait times and a reduction in nursing overtime.',
+      "Health Systems can expect to see up to a 15% increase in chair time utilization while using the Oncare platform, 25% of their charge nurse’s time saved along with a significant decrease in patient wait times and a reduction in nursing overtime.",
   },
   {
     question: 'What protections and security has Oncare put in place to handle our data?',

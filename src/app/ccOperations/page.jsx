@@ -72,7 +72,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-semibold text-[#000000] mb-2">Strengthen Operational Resilience</h3>
               <p className="text-[#000000] text-lg px-4 py-4 text-left">
-                Build your center’s ability to manage daily fluctuations, including same-day add-ons, no-shows, and cancellations, by refining scheduling and resource allocation for seamless day-to-day operations.
+                Build your center&apos;s ability to manage daily fluctuations, including same-day add-ons, no-shows, and cancellations, by refining scheduling and resource allocation for seamless day-to-day operations.
               </p>
             </div>
 
@@ -170,7 +170,7 @@ export default function Home() {
           {/* Left Column: Text and Buttons */}
           <div className="md:w-1/2 text-left p-8 md:pl-[6rem] mb-8 md:mb-0">
             <h2 className="text-4xl font-bold text-gray-900 mb-6 leading-tight">
-            Explore how Oncare can modernize your Cancer Center's operations & care delivery today.
+            Explore how Oncare can modernize your Cancer Centers operations &amp; care delivery today.
             </h2>
             <div className="flex space-x-4">
               <a href="#" className="bg-primary text-white font-medium py-3 px-6 rounded-full">

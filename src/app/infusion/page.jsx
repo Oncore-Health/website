@@ -88,7 +88,7 @@ export default function Home() {
           <div className="text-center mb-8">
             <h2 className="text-4xl font-bold">The Solution</h2>
             <p className="lg:text-2xl text-lg max-w-5xl mx-auto mb-8 px-[2vw] mt-8">
-              Oncare strengthens infusion center operations by <span className="font-bold">improving patient access, reducing nursing burden and overtime, & enhancing care team efficiency</span>
+              Oncare strengthens infusion center operations by <span className="font-bold">improving patient access, reducing nursing burden and overtime, &amp; enhancing care team efficiency</span>
             </p>
           </div>
 
@@ -108,7 +108,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold">Streamlined EHR Integration</h2>
             <p className="lg:text-2xl text-lg max-w-4xl mx-auto mb-8 px-[2vw] mt-8" style={{ lineHeight: '2' }}>
               Oncare integrates seamlessly with all leading EHRs and is <span className="font-bold text-[#A7DBFF] bg-[#5648C2] max-w-2xl mx-auto mb-8 px-1 py-1 rounded-lg">able to use</span> <span className="font-bold text-[#A7DBFF] bg-[#5648C2] max-w-2xl mx-auto mb-8 px-1 py-1 rounded-lg">several different methods</span>, 
-              including FHIR, SFTP, HL7, & EHR APIs.</p>
+              including FHIR, SFTP, HL7, &amp; EHR APIs.</p>
           </div>
           <div className="flex justify-center">
             <div className="relative">
@@ -180,10 +180,10 @@ export default function Home() {
               <img src="/dynamic-changes.png" alt="Dynamic Changes" className="object-cover w-full max-w-lg" />
               <div className="flex flex-col justify-center items-start lg:pr-8 mt-6 lg:mt-0 max-w-2xl lg:ml-auto p-8"> 
                 <h2 className="text-3xl sm:text-4xl font-bold text-black mb-2 text-right w-full"> {/* Applied w-full and text-right */}
-                  Dynamic Changes & Exception Handling
+                  Dynamic Changes &amp; Exception Handling
                 </h2>
                 <p className="text-gray-700 text-lg text-right w-full"> {/* Applied w-full and text-right */}
-                  Add-on scheduling recommendations & conversational AI tools to optimally handle last-minute changes, and plan coverage to handle last-minute staffing changes.
+                  Add-on scheduling recommendations &amp; conversational AI tools to optimally handle last-minute changes, and plan coverage to handle last-minute staffing changes.
                 </p>
               </div>
             </div>
@@ -197,7 +197,7 @@ export default function Home() {
                   Platform Configurability
                 </h2>
                 <p className="text-gray-700 text-lg">
-                  Oncare’s AI engine is customizable across care settings based on dozens of advanced variables and staffing/scheduling inputs.
+                  Oncare&apos;s AI engine is customizable across care settings based on dozens of advanced variables and staffing/scheduling inputs.
                 </p>
               </div>
             </div>
