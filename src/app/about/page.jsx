@@ -5,22 +5,34 @@ import { useState, useEffect } from 'react';
 
 export default function AboutPage() {
 
-  const [viewportWidth, setViewportWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 800);
+  const [viewportWidth, setViewportWidth] = useState(null);
 
   useEffect(() => {
-    function handleResize() {
+    // Set viewportWidth when the component mounts
+    if (typeof window !== 'undefined') {
       setViewportWidth(window.innerWidth);
+
+      function handleResize() {
+        setViewportWidth(window.innerWidth);
+      }
+
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
     }
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  // If viewportWidth is not set yet, don't render the diagram
+  if (viewportWidth === null) {
+    return null; // Or you can return a loader/spinner if you prefer
+  }
 
   const circleSize = Math.min(0.4 * viewportWidth, 500);
   const distanceRatio = 0.18; // Adjust this value between 0 and 1 to change overlap
   const distanceBetweenCenters = circleSize * distanceRatio;
 
-  const leftCircleLeft = (viewportWidth / 2) - (distanceBetweenCenters / 2);
-  const rightCircleLeft = (viewportWidth / 2) + (distanceBetweenCenters / 2) - circleSize;
+  const leftCircleLeft = viewportWidth / 2 - distanceBetweenCenters / 2;
+  const rightCircleLeft = viewportWidth / 2 + distanceBetweenCenters / 2 - circleSize;
+
   return (
     <>
       <div className="min-h-screen bg-white">
@@ -51,11 +63,29 @@ export default function AboutPage() {
       <div className="relative flex justify-center items-center" style={{ height: circleSize + 100 }}>
         {/* Left Circle */}
         <div
-          className="absolute bg-[#9E58FF1A] border-4 border-white rounded-full flex items-center justify-center shadow-2xl"
+          className="absolute bg-[#0051FF1A] border-4 border-white rounded-full flex items-center justify-center shadow-2xl"
           style={{
             width: circleSize,
             height: circleSize,
             left: leftCircleLeft,
+          }}
+        >
+          <div className="text-center px-10 lg:px-16 max-w-[100px] lg:max-w-[400px]">
+            <p className="text-black text-xl font-semibold">
+              We aspire to a future where oncology providers can truly focus on{' '}
+              <span className="font-bold text-[#525AFF]">patient-centric care delivery</span> rather than constantly
+              fighting an uphill battle against care logistics.
+            </p>
+          </div>
+        </div>
+
+        {/* Right Circle */}
+        <div
+          className="absolute bg-[#9E58FF1A] border-4 border-white rounded-full flex items-center justify-center shadow-2xl"
+          style={{
+            width: circleSize,
+            height: circleSize,
+            left: rightCircleLeft,
           }}
         >
           <div className="text-center px-10 lg:px-16 max-w-[100px] lg:max-w-[400px]">
@@ -70,24 +100,7 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
-
-        {/* Right Circle */}
-        <div
-          className="absolute bg-[#0051FF1A] border-4 border-white rounded-full flex items-center justify-center shadow-2xl"
-          style={{
-            width: circleSize,
-            height: circleSize,
-            left: rightCircleLeft,
-          }}
-        >
-          <div className="text-center px-10 lg:px-16 max-w-[100px] lg:max-w-[400px]">
-            <p className="text-black text-xl font-semibold">
-              We aspire to a future where oncology providers can truly focus on{' '}
-              <span className="font-bold text-[#525AFF]">patient-centric care delivery</span> rather than constantly
-              fighting an uphill battle against care logistics.
-            </p>
-          </div>
-        </div>
+        
       </div>
     </section>
 
