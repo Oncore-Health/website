@@ -22,14 +22,17 @@ export default function ApplicationForm() {
     ethnicity: '',
     veteranStatus: '',
     disability: '',
+    role: 'Founding Engineer',
   });
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: files ? files[0] : value,
-    }));
+    if (name !== 'role') {
+      setFormData((prev) => ({
+        ...prev,
+        [name]: files ? files[0] : value,
+      }));
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -123,7 +126,7 @@ Philadelphia / Remote
   <div className="max-w-4xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     
     {/* Markdown Content */}
-    <ReactMarkdown className="prose prose-lg dark:prose-dark">
+    <ReactMarkdown className="prose prose-lg dark:prose-dark text-black mx-auto">
       {markdownContent}
     </ReactMarkdown>
 
@@ -138,7 +141,7 @@ Philadelphia / Remote
           {/* Full Name */}
           <div className="sm:col-span-3">
             <label htmlFor="name" className="block text-sm font-medium leading-6 text-gray-900">
-              Full name
+              Full name <span className="text-red-500">*</span>
             </label>
             <div className="mt-2">
               <input
@@ -157,7 +160,7 @@ Philadelphia / Remote
           {/* Email */}
           <div className="sm:col-span-3">
             <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-              Email
+              Email <span className="text-red-500">*</span>
             </label>
             <div className="mt-2">
               <input
@@ -175,22 +178,31 @@ Philadelphia / Remote
 
           {/* Phone */}
           <div className="sm:col-span-3">
-            <label htmlFor="phone" className="block text-sm font-medium leading-6 text-gray-900">
-              Phone
-            </label>
-            <div className="mt-2">
-              <input
-                id="phone"
-                name="phone"
-                type="tel"
-                autoComplete="tel"
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                value={formData.phone}
-                onChange={handleChange}
-                required
-              />
-            </div>
-          </div>
+  <label htmlFor="phone" className="block text-sm font-medium leading-6 text-gray-900">
+    Phone <span className="text-red-500">*</span>
+  </label>
+  <div className="mt-2">
+    <input
+      id="phone"
+      name="phone"
+      type="tel"
+      autoComplete="tel"
+      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+      value={formData.phone.startsWith("+1") ? formData.phone : `+1${formData.phone}`}
+      onChange={(e) => {
+        const inputValue = e.target.value;
+
+        // Ensure it always starts with +1
+        if (inputValue.startsWith("+1")) {
+          setFormData((prev) => ({ ...prev, phone: inputValue }));
+        } else {
+          setFormData((prev) => ({ ...prev, phone: `+1${inputValue}` }));
+        }
+      }}
+      required
+    />
+  </div>
+</div>
 
           {/* Current Company */}
           <div className="sm:col-span-3">
@@ -211,52 +223,55 @@ Philadelphia / Remote
 
           {/* Resume */}
           <div className="sm:col-span-6">
-            <label htmlFor="cv" className="block text-sm font-medium leading-6 text-gray-900">
-              Resume/CV
+  <label htmlFor="cv" className="block text-sm font-medium leading-6 text-gray-900">
+    Resume/CV <span className="text-red-500">*</span>
+  </label>
+  <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-300 px-6 py-10">
+    <div className="text-center">
+      {/* If no file uploaded, show the upload button */}
+      {!formData.cv ? (
+        <>
+          <AiOutlineCloudUpload className="mx-auto h-12 w-12 text-gray-400" aria-hidden="true" />
+          <div className="mt-4 flex text-sm leading-6 text-gray-600">
+            <label
+              htmlFor="cv"
+              className="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2"
+            >
+              <span>Upload a file</span>
+              <input
+                id="cv"
+                name="cv"
+                type="file"
+                className="sr-only"
+                accept=".pdf"
+                onChange={(e) => {
+                  const file = e.target.files[0];
+                  if (file) {
+                    setFormData((prev) => ({ ...prev, cv: file }));
+                  }
+                }}
+              />
             </label>
-            <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-300 px-6 py-10">
-              <div className="text-center">
-                {/* <svg
-                  className="mx-auto h-12 w-12 text-gray-400"
-                  stroke="currentColor"
-                  fill="none"
-                  viewBox="0 0 48 48"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M8 16V10a4 4 0 014-4h24a4 4 0 014 4v6"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M16 16v16m8-8h-8m24 4v-8m-4 0v12m0-12a4 4 0 00-4-4H16"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg> */}
-                <AiOutlineCloudUpload className="mx-auto h-12 w-12 text-gray-400" aria-hidden="true" />
-                <div className="mt-4 flex text-sm leading-6 text-gray-600">
-                  <label
-                    htmlFor="cv"
-                    className="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2"
-                  >
-                    <span>Upload a file</span>
-                    <input
-                      id="cv"
-                      name="cv"
-                      type="file"
-                      className="sr-only"
-                      onChange={handleChange}
-                    />
-                  </label>
-                  <p className="pl-1">or drag and drop</p>
-                </div>
-                <p className="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
-              </div>
-            </div>
+            <p className="pl-1">or drag and drop</p>
           </div>
+          <p className="text-xs text-gray-500">PDF files up to 10MB</p>
+        </>
+      ) : (
+        // If a file is uploaded, show the file name and remove option
+        <div className="flex justify-between items-center">
+          <p className="text-gray-900">{formData.cv.name}</p>
+          <button
+            type="button"
+            onClick={() => setFormData((prev) => ({ ...prev, cv: null }))}
+            className="text-red-500 ml-4"
+          >
+            X
+          </button>
+        </div>
+      )}
+    </div>
+  </div>
+</div>
 
           {/* Personal Summary */}
           <div className="col-span-full">
@@ -338,7 +353,7 @@ Philadelphia / Remote
           {/* Gender */}
           <div className="sm:col-span-3">
             <label htmlFor="gender" className="block text-sm font-medium leading-6 text-gray-900">
-              Gender (optional)
+              Gender <span className="text-red-500">*</span>
             </label>
             <div className="mt-2">
               <select
@@ -358,7 +373,7 @@ Philadelphia / Remote
           {/* Ethnicity */}
           <div className="sm:col-span-3">
             <label htmlFor="ethnicity" className="block text-sm font-medium leading-6 text-gray-900">
-              Ethnicity &amp; Race (optional)
+              Ethnicity &amp; Race <span className="text-red-500">*</span>
             </label>
             <div className="mt-2">
               <select
@@ -378,7 +393,7 @@ Philadelphia / Remote
           {/* Veteran Status */}
           <div className="sm:col-span-3">
             <label htmlFor="veteranStatus" className="block text-sm font-medium leading-6 text-gray-900">
-              Protected Veteran Status (optional)
+              Protected Veteran Status <span className="text-red-500">*</span>
             </label>
             <div className="mt-2">
               <select
@@ -398,7 +413,7 @@ Philadelphia / Remote
           {/* Disability */}
           <div className="sm:col-span-3">
             <label htmlFor="disability" className="block text-sm font-medium leading-6 text-gray-900">
-              Disability Status (optional)
+              Disability Status <span className="text-red-500">*</span>
             </label>
             <div className="mt-2">
               <select

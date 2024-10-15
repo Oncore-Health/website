@@ -1,6 +1,26 @@
+"use client"
 import Navbar from '../components/Navbar';
 
+import { useState, useEffect } from 'react';
+
 export default function AboutPage() {
+
+  const [viewportWidth, setViewportWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 800);
+
+  useEffect(() => {
+    function handleResize() {
+      setViewportWidth(window.innerWidth);
+    }
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const circleSize = Math.min(0.4 * viewportWidth, 500);
+  const distanceRatio = 0.18; // Adjust this value between 0 and 1 to change overlap
+  const distanceBetweenCenters = circleSize * distanceRatio;
+
+  const leftCircleLeft = (viewportWidth / 2) - (distanceBetweenCenters / 2);
+  const rightCircleLeft = (viewportWidth / 2) + (distanceBetweenCenters / 2) - circleSize;
   return (
     <>
       <div className="min-h-screen bg-white">
@@ -25,32 +45,51 @@ export default function AboutPage() {
 
         {/* Why Section */}
         <section className="py-20 bg-white">
-            <div className="text-center mb-16">
-                <h2 className="text-4xl font-semibold text-black">Our Why?</h2>
-            </div>
-            <div className="relative flex justify-center items-center h-[500px]">
-                {/* Left Circle */}
-                <div className="absolute left-[18%] w-[500px] h-[500px] bg-[#9E58FF1A] border-4 border-white rounded-full flex items-center justify-center shadow-2xl">
-                <div className="text-center px-28">
-                    <p className="text-black">
-                    Cancer patients often face distress & anxiety due to <span className="font-bold">disjointed, uncoordinated care</span>.
-                    </p>
-                    <p className="text-black mt-4">
-                    Recognizing these systemic inefficiencies, we believe there is an <span className="font-bold">urgent need for change</span>  — not just for patients but also for the nurses and physicians who face unprecedented burnout due to these overwhelming challenges.
-                    </p>
-                </div>
-                </div>
+      <div className="text-center mb-16">
+        <h2 className="text-4xl font-semibold text-black">Our Why?</h2>
+      </div>
+      <div className="relative flex justify-center items-center" style={{ height: circleSize + 100 }}>
+        {/* Left Circle */}
+        <div
+          className="absolute bg-[#9E58FF1A] border-4 border-white rounded-full flex items-center justify-center shadow-2xl"
+          style={{
+            width: circleSize,
+            height: circleSize,
+            left: leftCircleLeft,
+          }}
+        >
+          <div className="text-center px-10 lg:px-16 max-w-[100px] lg:max-w-[400px]">
+            <p className="text-black text-xl">
+              Cancer patients often face distress & anxiety due to{' '}
+              <span className="font-bold">disjointed, uncoordinated care</span>.
+            </p>
+            <p className="text-black text-xl mt-4">
+              Recognizing these systemic inefficiencies, we believe there is an{' '}
+              <span className="font-bold">urgent need for change</span> — not just for patients but also for the
+              nurses and physicians who face unprecedented burnout due to these overwhelming challenges.
+            </p>
+          </div>
+        </div>
 
-                {/* Right Circle */}
-                <div className="absolute right-[18%] w-[500px] h-[500px] bg-[#0051FF1A] border-4 border-white rounded-full flex items-center justify-center shadow-2xl">
-                <div className="text-center px-28">
-                    <p className="text-black font-semibold">
-                    We aspire to a future where oncology providers can truly focus on <span className="font-bold text-[#525AFF]">patient-centric care delivery</span> rather than constantly fighting an uphill battle against care logistics.
-                    </p>
-                </div>
-                </div>
-            </div>
-        </section>
+        {/* Right Circle */}
+        <div
+          className="absolute bg-[#0051FF1A] border-4 border-white rounded-full flex items-center justify-center shadow-2xl"
+          style={{
+            width: circleSize,
+            height: circleSize,
+            left: rightCircleLeft,
+          }}
+        >
+          <div className="text-center px-10 lg:px-16 max-w-[100px] lg:max-w-[400px]">
+            <p className="text-black text-xl font-semibold">
+              We aspire to a future where oncology providers can truly focus on{' '}
+              <span className="font-bold text-[#525AFF]">patient-centric care delivery</span> rather than constantly
+              fighting an uphill battle against care logistics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
         <section className="bg-lighterBackgroundDiv py-16 text-center">
@@ -79,7 +118,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-2xl font-semibold text-[#000000] mb-2">Teamwork</h3>
                 <p className="text-[#000000] text-lg px-4 py-4 text-left">
-                    We are in this together. Collaboration and supporting each other are in our DNA. If you are someone who enjoys rolling up your sleeves and working as part of a tight-knit team, you will feel at home.
+                    We are in this together. <span className="font-bold">Collaboration and supporting each other are in our DNA.</span> If you are someone who enjoys rolling up your sleeves and working as part of a tight-knit team, you will feel at home.
                 </p>
               </div>
 
@@ -102,7 +141,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-semibold text-[#000000] mb-2">Creativity</h3>
               <p className="text-[#000000] text-lg px-4 py-4 text-left">
-                  We love bold ideas and out-of-the-box thinking. If you enjoy experimenting and finding unconventional solutions, you will fit right in!
+                  We love <span className="font-bold">bold ideas and out-of-the-box thinking</span>. If you enjoy experimenting and finding unconventional solutions, you will fit right in!
               </p>
               </div>
 
@@ -113,7 +152,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-semibold text-[#000000] mb-2">Intellectual Curiosity</h3>
               <p className="text-[#000000] text-lg px-4 py-4 text-left">
-                  We’re all about asking the tough questions and diving deep to figure things out. If you’re someone who’s always learning and eager to explore, you’ll thrive here.
+                  We&apos;re all about asking the <span className="font-bold">tough questions and diving deep to figure things out</span>. If you&apos;re someone who&apos;s always <span className="font-bold">learning and eager to explore</span>, you&apos;ll thrive here.
               </p>
               </div>
           </div>

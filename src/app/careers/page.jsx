@@ -43,7 +43,7 @@ export default function Careers() {
     {/* Teamwork */}
     <div className="text-center bg-white p-8 rounded-xl shadow-md h-auto">
       <div className="p-6 rounded-full inline-block mb-4">
-        <img src="/teamwork.png" alt="Teamwork Icon" className="w-32 h-32 mx-auto" /> {/* Increased size */}
+        <img src="/teamwork.svg" alt="Teamwork Icon" className="w-32 h-32 mx-auto" /> {/* Increased size */}
       </div>
       <h3 className="text-xl font-semibold text-gray-900 mb-2">Teamwork</h3>
       <p className="text-gray-700">
@@ -54,7 +54,7 @@ export default function Careers() {
     {/* Creativity */}
     <div className="text-center bg-white p-8 rounded-xl shadow-md h-auto">
       <div className="p-6 rounded-full inline-block mb-4">
-        <img src="/creativity.png" alt="Creativity Icon" className="w-32 h-32 mx-auto" /> {/* Increased size */}
+        <img src="/creativity.svg" alt="Creativity Icon" className="w-32 h-32 mx-auto" /> {/* Increased size */}
       </div>
       <h3 className="text-xl font-semibold text-gray-900 mb-2">Creativity</h3>
       <p className="text-gray-700">
@@ -65,7 +65,7 @@ export default function Careers() {
     {/* Intellectual Curiosity */}
     <div className="text-center bg-white p-8 rounded-xl shadow-md h-auto">
       <div className="p-6 rounded-full inline-block mb-4">
-        <img src="/curiosity.png" alt="Intellectual Curiosity Icon" className="w-32 h-32 mx-auto" /> {/* Increased size */}
+        <img src="/curiosity.svg" alt="Intellectual Curiosity Icon" className="w-32 h-32 mx-auto" /> {/* Increased size */}
       </div>
       <h3 className="text-xl font-semibold text-gray-900 mb-2">Intellectual Curiosity</h3>
       <p className="text-gray-700">
@@ -79,7 +79,7 @@ export default function Careers() {
     {/* Passion */}
     <div className="text-center bg-white p-8 rounded-xl shadow-md h-auto">
       <div className="p-6 rounded-full inline-block mb-4">
-        <img src="/passion.png" alt="Passion Icon" className="w-32 h-32 mx-auto" /> {/* Increased size */}
+        <img src="/passion.svg" alt="Passion Icon" className="w-32 h-32 mx-auto" /> {/* Increased size */}
       </div>
       <h3 className="text-xl font-semibold text-gray-900 mb-2">Passion</h3>
       <p className="text-gray-700">
@@ -90,7 +90,7 @@ export default function Careers() {
     {/* Diversity */}
     <div className="text-center bg-white p-8 rounded-xl shadow-md h-auto">
       <div className="p-6 rounded-full inline-block mb-4">
-        <img src="/diversity.png" alt="Diversity Icon" className="w-32 h-32 mx-auto" /> {/* Increased size */}
+        <img src="/diversity.svg" alt="Diversity Icon" className="w-32 h-32 mx-auto" /> {/* Increased size */}
       </div>
       <h3 className="text-xl font-semibold text-gray-900 mb-2">Diversity</h3>
       <p className="text-gray-700">

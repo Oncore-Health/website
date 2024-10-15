@@ -32,7 +32,7 @@ export default function Home() {
           <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end relative">
             {/* Image Section */}
             <div className="relative">
-              <img src="/aic_photo.png" alt="AIC Operations Screenshot" className="w-full max-w-xl lg:max-w-2xl xl:max-w-3xl" />
+              <img src="/nurse_report.svg" alt="AIC Operations Screenshot" className="w-full max-w-xl lg:max-w-2xl xl:max-w-3xl" />
             </div>
           </div>
         </section>
@@ -53,7 +53,7 @@ export default function Home() {
             <div className="bg-white px-2 py-2 rounded-3xl shadow-lg">
               {/* Placeholder Image with Increased Height */}
               <div className="h-56 mb-4 rounded-3xl">
-                <img src="scale.png" alt="Scale AIC Volume" className="w-full h-full object-cover rounded-3xl" />
+                <img src="scale.svg" alt="Scale AIC Volume" className="w-full h-full object-cover rounded-3xl" />
               </div>
               <h3 className="text-2xl font-semibold text-[#000000] mb-2">Scale AIC Volume</h3>
               <p className="text-[#000000] text-lg px-4 py-4 text-left">
@@ -64,7 +64,7 @@ export default function Home() {
             <div className="bg-white px-2 py-2 rounded-3xl shadow-lg">
               {/* Placeholder Image with Increased Height */}
               <div className="h-56 mb-4 rounded-3xl">
-                <img src="strength.png" alt="Strengthen Operational Resilience" className="w-full h-full object-cover rounded-3xl" />
+                <img src="gears.svg" alt="Strengthen Operational Resilience" className="w-full h-full object-cover rounded-3xl" />
               </div>
               <h3 className="text-2xl font-semibold text-[#000000] mb-2">Strengthen Operational Resilience</h3>
               <p className="text-[#000000] text-lg px-4 py-4 text-left">
@@ -75,7 +75,7 @@ export default function Home() {
             <div className="bg-white px-2 py-2 rounded-3xl shadow-lg">
               {/* Placeholder Image with Increased Height */}
               <div className="h-56 mb-4 rounded-3xl">
-                <img src="enhance.png" alt="Enhance Patient Experience" className="w-full h-full object-cover rounded-3xl" />
+                <img src="patient.svg" alt="Enhance Patient Experience" className="w-full h-full object-cover rounded-3xl" />
               </div>
               <h3 className="text-2xl font-semibold text-[#000000] mb-2">Enhance Patient Experience</h3>
               <p className="text-[#000000] text-lg px-4 py-4 text-left">
@@ -87,7 +87,7 @@ export default function Home() {
             <div className="bg-white px-2 py-2 rounded-3xl shadow-lg">
               {/* Placeholder Image with Increased Height */}
               <div className="h-56 mb-4 rounded-3xl">
-                <img src="efficiency.png" alt="Improve Team Efficiency" className="w-full h-full object-cover rounded-3xl" />
+                <img src="team.svg" alt="Improve Team Efficiency" className="w-full h-full object-cover rounded-3xl" />
               </div>
               <h3 className="text-2xl font-semibold text-[#000000] mb-2">Improve Team Efficiency</h3>
               <p className="text-[#000000] text-lg px-4 py-4 text-left">
@@ -98,7 +98,7 @@ export default function Home() {
             <div className="bg-white px-2 py-2 rounded-3xl shadow-lg">
               {/* Placeholder Image with Increased Height */}
               <div className="h-56 mb-4 rounded-3xl">
-                <img src="satisfaction.png" alt="Improve Nursing Satisfaction" className="w-full h-full object-cover rounded-3xl" />
+                <img src="heart.svg" alt="Improve Nursing Satisfaction" className="w-full h-full object-cover rounded-3xl" />
               </div>
               <h3 className="text-2xl font-semibold text-[#000000]0 mb-2">Improve Nursing Satisfaction</h3>
               <p className="text-[#000000] text-lg px-4 py-4 text-left">
@@ -109,7 +109,7 @@ export default function Home() {
             <div className="bg-white px-2 py-2 rounded-3xl shadow-lg">
               {/* Placeholder Image with Increased Height */}
               <div className="h-56 mb-4 rounded-3xl">
-                <img src="inform.png" alt="Inform Data-Driven Decisions" className="w-full h-full object-cover rounded-3xl" />
+                <img src="data.svg" alt="Inform Data-Driven Decisions" className="w-full h-full object-cover rounded-3xl" />
               </div>
               <h3 className="text-2xl font-semibold text-[#000000] mb-2">Inform Data-Driven Decisions</h3>
               <p className="text-[#000000] text-lg px-4 py-4 text-left">
@@ -168,7 +168,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-gray-900 mb-6 leading-tight">
               Explore how Oncare can modernize your AIC&apos;s operations and care delivery today
             </h2>
-            <div className="flex space-x-4">
+            <div className="flex items-center space-x-4">
               <a href="#" className="bg-primary text-white font-medium py-3 px-6 rounded-full">
                 Platform
               </a>
@@ -181,7 +181,7 @@ export default function Home() {
           {/* Right Column: Image */}
           <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end relative">
             <div className="relative">
-              <img src="exec.png" alt="Executive Reports" className="w-full max-w-xl lg:max-w-2xl xl:max-w-3xl" />
+              <img src="exec_pic.svg" alt="Executive Reports" className="w-full max-w-xl lg:max-w-2xl xl:max-w-3xl" />
             </div>
           </div>
         </section>

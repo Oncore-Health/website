@@ -69,23 +69,22 @@ export default function Navbar() {
             </div>*/}
             
             <a href="/infusion" className="text-md text-black hover:text-primary">AI Infusion Platform</a>
-            {/* <a href="/#use-cases" className="text-md text-black hover:text-primary">Use Cases</a> */}
-            {/* Dropdown for Use Cases */}
+            <a href="/#use-cases" className="text-md text-black hover:text-primary">Use Cases</a>
+            {/* <a href="/#" className="text-md text-black hover:text-primary">Who We Serve</a> */}
             <div className="relative group text-md">
-              <div className="flex items-center py-2 cursor-pointer" onClick={toggleDropdown}>
-                <span className="text-black">Use Cases</span>
-                <IoIosArrowDown className="inline-block ml-1 text-primary transition-transform duration-200" />
-              </div>
-              
-              {/* Dropdown Menu */}
-              {isDropdownOpen && (
-                <div className="absolute w-48 bg-white border border-gray-200 shadow-lg rounded-md mt-2 z-10">
-                  <a href="/aicOperations" className="block px-4 py-2 hover:text-primary">AIC</a>
-                  <a href="/ccOperations" className="block px-4 py-2 hover:text-primary">Health Systems</a>
-                </div>
-              )}
+            {/* The link with dropdown trigger */}
+            <div className="flex items-center py-2 cursor-pointer">
+              <a href="/#" className="text-black">Who We Serve</a>
+              {/* Arrow indicator for dropdown */}
+              <IoIosArrowDown className="inline-block ml-1 text-primary transition-transform duration-200 group-hover:rotate-180" />
             </div>
-            <a href="/#" className="text-md text-black hover:text-primary">Who We Serve</a>
+
+            {/* Dropdown Menu */}
+            <div className="absolute w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-200 hidden z-10">
+              <a href="/aicOperations" className="block px-4 py-2 hover:text-primary">AICs</a>
+              <a href="/ccOperations" className="block px-4 py-2 hover:text-primary">Cancer Centers</a>
+            </div>
+          </div>
             <a href="/#integrations" className="text-md text-black hover:text-primary">Integrations</a>
             <a href="/about" className="text-md text-black hover:text-primary">About Us</a>
             <a href="/careers" className="text-md text-black hover:text-primary">Careers</a>
