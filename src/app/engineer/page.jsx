@@ -59,7 +59,7 @@ export default function ApplicationForm() {
   const markdownContent = `
   ### Company Overview
 
-We are a 3-member team out of Penn Engineering & Wharton building an AI clinical operations platform for oncology. Our mission is to use technology to help improve cancer patient's access to care and reduce the administrative burden that nurses face when navigating patients through their care journey. We recently raised our pre-seed from TenOneTen, Craft Ventures, and Looking Glass Capital and already have 6-figure contracts lined up with multiple major health systems. We will be raising our seed round in the next 9-12 months.
+At Oncare, we are building an AI clinical operations platform for oncology. Our mission is to use technology to help improve cancer patient's access to care and reduce the administrative burden that nurses face when navigating patients through their care journey.
 
 ### Position Overview
 
@@ -363,8 +363,10 @@ Philadelphia / Remote
                 value={formData.gender}
                 onChange={handleChange}
               >
-                <option>Woman</option>
+                <option>Gender</option>
                 <option>Man</option>
+                <option>Woman</option>
+                <option>Other</option>
                 <option>Prefer not to say</option>
               </select>
             </div>
@@ -383,9 +385,15 @@ Philadelphia / Remote
                 value={formData.ethnicity}
                 onChange={handleChange}
               >
-                <option>I decline to identify</option>
+                <option>Ethinicity</option>
+                <option>White</option>
+                <option>African American</option>
+                <option>Asian (East)</option>
+                <option>Asian (South)</option>
                 <option>Hispanic or Latino</option>
-                <option>Not Hispanic or Latino</option>
+                <option>Native American</option>
+                <option>Pacific Islander</option>
+                <option>I decline to identify</option>
               </select>
             </div>
           </div>
@@ -403,6 +411,7 @@ Philadelphia / Remote
                 value={formData.veteranStatus}
                 onChange={handleChange}
               >
+                <option>Veteran Status</option>
                 <option>I am a protected veteran</option>
                 <option>I am not a protected veteran</option>
                 <option>I decline to self-identify</option>
@@ -423,9 +432,10 @@ Philadelphia / Remote
                 value={formData.disability}
                 onChange={handleChange}
               >
-                <option>I decline to disclose</option>
+                <option>Disability Status</option>
                 <option>I identify as disabled</option>
                 <option>I do not identify as disabled</option>
+                <option>I decline to disclose</option>
               </select>
             </div>
           </div>
