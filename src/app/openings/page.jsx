@@ -22,7 +22,7 @@ export default function Postings() {
                 <p className="text-gray-600">Philadelphia, PA · Full-time</p>
               </div>
               <div>
-                <a href="/engineer" onClick={() => handleApplyClick('Founding Engineer')} className="text-indigo-600 font-semibold hover:underline">See Details →</a>
+                <a href="/engineer" className="text-indigo-600 font-semibold hover:underline">See Details →</a>
               </div>
             </div>
 
@@ -33,7 +33,7 @@ export default function Postings() {
                 <p className="text-gray-600">Philadelphia, PA · Full-time</p>
               </div>
               <div>
-                <a href="/gtmrole" onClick={() => handleApplyClick('Founding GTM Role')} className="text-indigo-600 font-semibold hover:underline">See Details →</a>
+                <a href="/gtmrole" className="text-indigo-600 font-semibold hover:underline">See Details →</a>
               </div>
             </div>
           </div>

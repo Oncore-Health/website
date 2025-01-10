@@ -29,19 +29,21 @@ export async function POST(req) {
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: 'shubham@useoncare.com', // Where the form will be sent
-    subject: `New Application from ${name}`,
-    text: `
-      Name: ${name}
-      Email: ${email}
-      Role: ${role}
-      Experience: ${experience}
-      Message: ${message}
-      Gender: ${gender}
-      Ethnicity: ${ethnicity}
-      Veteran Status: ${veteranStatus}
-      Disability Status: ${disability}
-    `,
+    to: 'sruthi@useoncare.com', // Where the form will be sent
+    subject: `${role}: ${name} Application`,
+    text: `A new application has been submitted for ${role} on ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeString()}.
+
+Please find the candidate's details below and their resume attached.
+
+Name: ${name}
+Email: ${email}
+Role: ${role}
+Experience: ${experience}
+Message: ${message}
+Gender: ${gender}
+Ethnicity: ${ethnicity}
+Veteran Status: ${veteranStatus}
+Disability Status: ${disability}`,
     attachments: [
       {
         filename: cv.name,
@@ -54,14 +56,12 @@ export async function POST(req) {
     from: process.env.EMAIL_USER,
     to: email,  // User's email
     subject: 'Thank you for your application!',
-    text: `
-      Hi ${firstName},
+    text: `Hi ${firstName},
 
-      Thank you for submitting your application to Oncare for the role: ${role}. We have received your details and we're excited to take a look at your application and will get back to you as soon as possible!
+Thank you for submitting your application to Oncare for the role: ${role}. We have received your details and we're excited to take a look at your application and will get back to you as soon as possible!
 
-      Best regards,
-      Oncare Team
-    `,
+Best regards,
+Oncare Team`,
   };
 
   try {
