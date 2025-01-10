@@ -37,7 +37,7 @@ export default function Home() {
           <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end relative">
             {/* Image Section */}
             <div className="relative">
-              <img src="/ic_pic.svg" alt="AIC Operations Screenshot" className="w-full max-w-xl lg:max-w-2xl xl:max-w-3xl" />
+              <img src="/daily-calendar.png" alt="AIC Operations Screenshot" className="w-full max-w-xl lg:max-w-2xl xl:max-w-3xl" />
             </div>
           </div>
         </section>
