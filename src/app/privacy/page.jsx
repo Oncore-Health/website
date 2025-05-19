@@ -104,7 +104,7 @@ export default function PrivacyPolicy() {
 					</ul>
 
 					<h2 className="text-xl font-semibold text-gray-700 mb-4">
-						8. Children's Privacy
+						8. Children&apos;s Privacy
 					</h2>
 					<p className="text-gray-700 leading-7 mb-6">
 						Our SMS service is not intended for individuals under 13 years of age. We do

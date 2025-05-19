@@ -16,10 +16,10 @@ export default function TermsOfService() {
 				<div className="prose prose-blue max-w-none">
 					<h2 className="text-xl font-semibold text-gray-700 mb-4">1. Introduction</h2>
 					<p className="text-gray-700 leading-7 mb-6">
-						Welcome to Oncore's SMS Updates Service. These Terms of Service ("Terms")
-						govern your use of our SMS notification service. By subscribing to our SMS
-						updates, you agree to these Terms. If you do not agree, please do not
-						subscribe to our SMS service.
+						Welcome to Oncore&apos;s SMS Updates Service. These Terms of Service
+						(&quot;Terms&quot;) govern your use of our SMS notification service. By
+						subscribing to our SMS updates, you agree to these Terms. If you do not
+						agree, please do not subscribe to our SMS service.
 					</p>
 
 					<h2 className="text-xl font-semibold text-gray-700 mb-4">
@@ -28,7 +28,7 @@ export default function TermsOfService() {
 					<p className="text-gray-700 leading-7 mb-6">
 						Oncore provides SMS notifications to keep you informed about important
 						updates, appointments, and relevant information. Message frequency varies
-						based on your preferences and the type of updates you've subscribed to.
+						based on your preferences and the type of updates you&apos;ve subscribed to.
 					</p>
 
 					<h2 className="text-xl font-semibold text-gray-700 mb-4">
